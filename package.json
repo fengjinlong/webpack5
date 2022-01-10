@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack serve --config webpack.config-dev.js --mode development",
+    "dev": "cross-env NODE_ENV=development webpack serve --config webpack.config-dev.js --progress",
     "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "html-webpack-plugin": "^5.5.0",
     "ts-loader": "^9.2.6",
     "webpack": "^5.65.0",
